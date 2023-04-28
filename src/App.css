@@ -1,3 +1,6 @@
+body {
+  background-color: rgb(146, 146, 146);
+}
 .blue-text {
   color: blue;
 }
@@ -44,4 +47,54 @@
   width: min(80vw, 180px);
   align-items: center;
   color: #fff;
+  margin-top: 100px;
+}
+
+.border {
+  border-style: solid;
+  border-color: rgb(124, 124, 124);
+  background-color: #fff;
+  border-width: 2px;
+  border-radius: 5px;
+  /* background-color: rgb(255, 0, 0); */
+  
+}
+.radio-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto ;
+  gap: 10px;
+  padding: 10px 10px 10px 10px;
+  text-align: center;
+}
+.blue-container {
+  display: grid;
+  grid-column: auto;
+  grid-row: auto auto;
+
+}
+.blue-border {
+  margin: 10px;
+  border-radius: 5px;
+}
+.bgw{
+  background-color: #fff;
+  border-radius: 5px;
+  padding-bottom: 20px;
+  
+}
+.wrapper {
+  height: 100vh; /* full height of the viewport */
+  width: 100vw; /* full width of the viewport */
+  display: flex; /* enable flexbox */
+  justify-content: center; /* center horizontally */
+  align-items: center; /* center vertically */
+}
+.image{
+  display: grid;
+  grid-template-columns: 120px auto;
+  grid-template-rows: 120px auto;
+}
+.image-radius{
+  border-radius: 30%;
 }
