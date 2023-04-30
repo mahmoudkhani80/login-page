@@ -1,8 +1,4 @@
-function submit () {
-    return (
-        <div className="submit-button">
-            <h4>Create account</h4>
-        </div>
-    )
+function submit() {
+  return <input type="submit" name="Create-account" className="submit-button" value="Create account" />;
 }
-export default submit
+export default submit;

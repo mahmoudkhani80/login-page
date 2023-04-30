@@ -10,51 +10,47 @@ import myImage from "./myimage.jpg";
 function login() {
   return (
     <div className="wrapper">
-      <Container className="bgw">
+      <Container className="back-ground-white">
         <Row>
           {/* blue part */}
-          <Col className="blue-container">
-            <div className="bg-primary blue-border">
+          <Col className="blue-side white-text">
+            <div className="">
               <strong>FLEESO</strong>
-              <div>
+              <div className="blue-text-section"> 
                 <h1>
                   Start your
                   <br />
                   journey with us
                 </h1>
-              </div>
-              <div>
-                <p>
+                <p className="grey-text">
                   Discover the world's best
                   <br />
                   community of freelancers and <br />
                   business owners.
                 </p>
               </div>
-              <Container>
-                <Row>
-                  <p>
-                    simply unbelievable! i am really satisfied
-                    <br />
-                    with my projects and business. This is
-                    <br />
-                    Absolutely wonderful!
-                  </p>
-                </Row>
-                <Row className="image">
+              <div className="comment">
+                <p className="grey-text">
+                  simply unbelievable! i am really satisfied
+                  <br />
+                  with my projects and business. This is
+                  <br />
+                  Absolutely wonderful!
+                </p>
+                <div className="comment-info">
                   <img
                     className="image-radius"
                     src={myImage}
                     alt="my image"
-                    width="5px"
-                    height="100px"
+                    width="50px"
+                    height="50px"
                   ></img>
                   <div>
-                    <strong>ali mahmoudkhani</strong>
-                    <p>freelancer</p>
+                    <strong className="">ali mahmoudkhani</strong>
+                    <p className="grey-text">freelancer</p>
                   </div>
-                </Row>
-              </Container>
+                </div>
+              </div>
             </div>
           </Col>
 
@@ -64,14 +60,14 @@ function login() {
             <p>
               Have an account?<span className="blue-text">Login</span>
             </p>
-
+            <p>Looking for?</p>
             {/* radio buttons */}
             <Row className="radio-container">
-              <div className="border">
+              <div className="border-for-inputs radio-button-left">
                 <input type="radio" value="projects" name="looking-for" />{" "}
                 Projects
               </div>
-              <div className="border">
+              <div className="border-for-inputs radio-button-right">
                 <input type="radio" value="designs" name="looking-for" />{" "}
                 Designs
               </div>
@@ -89,7 +85,7 @@ function login() {
             <Row>
               <div>
                 <strong>enter your skills</strong>
-                <div className="border">
+                <div className="border-for-inputs">
                   <TagsInput />
                 </div>
               </div>
