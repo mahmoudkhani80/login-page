@@ -1,9 +1,7 @@
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Container, Row, Col, Button, Form } from "react-bootstrap";
-// old css
-// import "./App.css";
-import "./Apps.css";
+import "./App.css";
 import FormComponent from "./components/FormComponent";
 import PasswordForm from "./components/PasswordForm";
 import TagsInput from "./components/TagsInput";
