@@ -72,6 +72,13 @@ body {
   border-width: 1px;
   border-radius: 5px;
 }
+.radio-border {
+  border-style: solid;
+  border-color: rgb(124, 124, 124);
+  background-color: #fff;
+  border-width: 1px;
+  border-radius: 5px;
+}
 .radio-container {
   display: grid;
   grid-template-columns: 250px 250px;

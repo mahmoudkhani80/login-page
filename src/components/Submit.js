@@ -1,4 +1,4 @@
 function submit() {
-  return <input type="submit" name="Create-account" className="submit-button" value="Create account" />;
+  return <input type="submit" name="Create-account" className="submit white-text" value="Create account"/>;
 }
 export default submit;
