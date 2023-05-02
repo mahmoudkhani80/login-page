@@ -16,23 +16,23 @@ function TagsInput() {
   }
 
   return (
-    <div className="tags-input-container">
-      {tags.map((tag, index) => (
-        <div className="tag-item" key={index}>
-          <span className="text">{tag}</span>
-          <span className="close" onClick={() => removeTag(index)}>
-            &times;
-          </span>
-        </div>
-      ))}
-      <div className="input-layout">
-        <strong>enter your skills</strong>
-        <input
-          onKeyDown={handleKeyDown}
-          type="text"
-          className="border-for-inputs"
-          placeholder="Enter your skills"
-        />
+    <div className="input-layout">
+      <strong>enter your skills</strong>
+      <input
+        onKeyDown={handleKeyDown}
+        type="text"
+        className="border-for-inputs"
+        placeholder="Enter your skills"
+      />
+      <div className="tags-input-container">
+        {tags.map((tag, index) => (
+          <div className="tag-item" key={index}>
+            <span className="text">{tag}</span>
+            <span className="close" onClick={() => removeTag(index)}>
+              &times;
+            </span>
+          </div>
+        ))}
       </div>
     </div>
   );
