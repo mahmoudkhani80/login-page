@@ -3,7 +3,7 @@ function Email() {
     <div>
       <div className="input-layout">
         <label>
-          <strong>Email</strong>
+          <strong className="grey-text">Email</strong>
         </label>
         <input
           type="email"

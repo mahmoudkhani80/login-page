@@ -2,6 +2,9 @@ body {
   font-family: sans-serif;
   background-color: grey;
 }
+.short-size{
+  font-size: 15px;
+}
 input:hover {
   transition: 1s;
   border-color: blueviolet;
@@ -16,7 +19,10 @@ a:link {
   color: white;
 }
 .grey-text {
-  color: grey;
+  color: rgb(119, 119, 119);
+}
+.purple{
+  color: purple;
 }
 .blue-text {
   color: blue;
@@ -52,7 +58,7 @@ a:link {
 }
 .white-section {
   display: grid;
-  grid-template-rows: 0.2fr 0.2fr 0.2fr 0.5fr 0.5fr 0.5fr 0.8fr ;
+  grid-template-rows: 0.2fr 0.2fr 0.2fr 0.5fr 0.5fr 0.5fr 0.9fr ;
   background-color: white;
   row-gap: 20px;
   margin-top: 50px;
@@ -90,6 +96,16 @@ a:link {
 }
 .radio-buttons{
   font-size: 25px;
+  border-style: solid;
+  border-color: rgb(224, 224, 224);
+  background-color: #fff;
+  border-width: 1px;
+  border-radius: 5px;
+}
+.radio-buttons:hover{
+  transition: 1s;
+  border-color: rgb(89, 0, 255);
+  color: rgb(89, 0, 255);
 }
 .radio-buttons > input {
   grid-row: 2/3;

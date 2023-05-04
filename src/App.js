@@ -48,7 +48,7 @@ function login() {
                 ></img>
                 <div>
                   <strong className="">ali mahmoudkhani</strong>
-                  <p className="">freelancer</p>
+                  <p className="short-size grey-text">freelancer</p>
                 </div>
               </div>
             </div>
@@ -58,7 +58,7 @@ function login() {
 
         <div className="white-section">
           {/* input part */}
-          <h1>Sign up</h1>
+          <h2>Sign up</h2>
           <p>
             Have an account?<a href="#">Login</a>
           </p>

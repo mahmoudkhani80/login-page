@@ -2,7 +2,7 @@ function password() {
   return (
     <div className="input-layout">
       <label>
-        <strong>password</strong>
+        <strong className="grey-text">Password</strong>
       </label>
       <input type="password" name="password" className="border-for-inputs"/>
     </div>

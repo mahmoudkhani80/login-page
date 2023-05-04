@@ -17,7 +17,7 @@ function TagsInput() {
 
   return (
     <div className="input-layout">
-      <strong>enter your skills</strong>
+      <strong className="grey-text">Select Skills</strong>
       <input
         onKeyDown={handleKeyDown}
         type="text"
