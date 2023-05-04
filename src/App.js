@@ -1,4 +1,3 @@
-
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Container, Row, Col, Button, Form } from "react-bootstrap";
 import "./App.css";
@@ -8,6 +7,7 @@ import TagsInput from "./components/TagsInput";
 import Submit from "./components/Submit";
 import myImage from "./myimage.jpg";
 import RadioButtons from "./components/RadioButtons";
+import ThreeDot from "./components/ThreeDot"
 
 function login() {
   return (
@@ -38,7 +38,7 @@ function login() {
                 <br />
                 Absolutely wonderful!
               </p>
-              <div className="">
+              <div className="comment-profile">
                 <img
                   className=""
                   src={myImage}
@@ -52,13 +52,7 @@ function login() {
                 </div>
               </div>
             </div>
-            <div className="circle-position">
-              <div className="circle-container">
-                <span className="circle"></span>
-                <span className="circle"></span>
-                <span className="circle"></span>
-              </div>
-            </div>
+            <ThreeDot/>
           </div>
         </div>
 
@@ -68,7 +62,6 @@ function login() {
           <p>
             Have an account?<a href="#">Login</a>
           </p>
-          <p>Looking for?</p>
           {/* radio buttons */}
           <div>
             <RadioButtons />
