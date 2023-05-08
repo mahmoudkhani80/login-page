@@ -2,6 +2,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { Container, Row, Col, Button, Form } from "react-bootstrap";
 import "./App.css";
 import FormComponent from "./components/FormComponent";
+import PasswordForm from "./components/PasswordForm";
 import TagsInput from "./components/TagsInput";
 import Submit from "./components/Submit";
 import myImage from "./myimage.jpg";
@@ -65,9 +66,13 @@ function login() {
           <div>
             <RadioButtons />
           </div>
-          {/* <Email & password Input /> */}
+          {/* <Email Input /> */}
           <div>
             <FormComponent />
+          </div>
+          {/* <Password Input /> */}
+          <div>
+            <PasswordForm/>
           </div>
           {/* skills input */}
           <div>

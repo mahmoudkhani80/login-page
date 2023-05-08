@@ -1,17 +1,17 @@
 import React, { useState } from "react";
 
 function Email() {
-  const [email, setEmail] = useState("");
-  const [errorMsg, setErrorMsg] = useState("");
+  const [email, setEmail] = useState('');
+  const [errorMsg, setErrorMsg] = useState('');
 
   function handleEmailChange(e) {
     const value = e.target.value;
     setEmail(value);
 
     if (!isValidEmail(value)) {
-      setErrorMsg("Please enter a valid email address.");
+      setErrorMsg('Please enter a valid email address.');
     } else {
-      setErrorMsg("");
+      setErrorMsg('');
     }
   }
 
@@ -27,23 +27,8 @@ function Email() {
         <label>
           <strong className="grey-text">Email</strong>
         </label>
-        <input
-          type="email"
-          name={email}
-          onChange={handleEmailChange}
-          className="border-for-inputs"
-        />
-        <p className="error">{errorMsg}</p>
-        <div className="input-layout">
-          <label>
-            <strong className="grey-text">Password</strong>
-          </label>
-          <input
-            type="password"
-            name="password"
-            className="border-for-inputs"
-          />
-        </div>
+        <input type="email" name="email" onChange={handleEmailChange} className="border-for-inputs" />
+        {errorMsg && <p className="error">{errorMsg}</p>}
       </div>
     </div>
   );
