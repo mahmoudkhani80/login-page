@@ -1,13 +1,14 @@
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Container, Row, Col, Button, Form } from "react-bootstrap";
+// import { Container, Row, Col, Button, Form } from "react-bootstrap";
 import "./App.css";
-import FormComponent from "./components/FormComponent";
+import EmailForm from "./components/EmailForm";
 import PasswordForm from "./components/PasswordForm";
 import TagsInput from "./components/TagsInput";
-import Submit from "./components/Submit";
-import myImage from "./myimage.jpg";
 import RadioButtons from "./components/RadioButtons";
-import ThreeDot from "./components/ThreeDot"
+import SubmitButton from "./components/Submit";
+import myImage from "./myimage.jpg";
+
+import ThreeDot from "./components/ThreeDot";
 
 function login() {
   return (
@@ -52,7 +53,7 @@ function login() {
                 </div>
               </div>
             </div>
-            <ThreeDot/>
+            <ThreeDot />
           </div>
         </div>
 
@@ -60,27 +61,12 @@ function login() {
           {/* input part */}
           <h2>Sign up</h2>
           <p>
-            Have an account?<a href="#" className="login">Login</a>
+            Have an account?
+            <a href="#" className="login">
+              Login
+            </a>
           </p>
-          {/* radio buttons */}
-          <div>
-            <RadioButtons />
-          </div>
-          {/* <Email Input /> */}
-          <div>
-            <FormComponent />
-          </div>
-          {/* <Password Input /> */}
-          <div>
-            <PasswordForm/>
-          </div>
-          {/* skills input */}
-          <div>
-            <TagsInput />
-          </div>
-          <div>
-            <Submit />
-          </div>
+            <SubmitButton/>  
         </div>
       </div>
     </div>
