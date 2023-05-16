@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+// validation before submit
 function PasswordInput() {
   const [password, setPassword] = useState("");
   const [isValid, setIsValid] = useState(false);
