@@ -22,30 +22,31 @@ function SubmitButton() {
       // console.log(option);
     }
     // end of radio buttons
-    // email
+    // email (for after submit validation)
 
-    if (!isValidEmail(Email)) {
+    // if (!isValidEmail(Email)) {
       // console.log(Email);
-      setEmailErrorMsg("please enter email address");
-      return;
-    }
-    if (isValidEmail(Email)) {
+      // setEmailErrorMsg("please enter email address");
+      // return;
+    // }
+    // if (isValidEmail(Email)) {
       // console.log(Email);
-      setEmailErrorMsg("");
-    }
+      // setEmailErrorMsg("");
+    // }
     // end of email
   }
   // console.log(setEmailErrorMsg);
   function handleOption(option) {
     setOption(option);
   }
-  function handleEmail(event) {
-    setEmail(event.target.value);
-  }
-  const isValidEmail = (Email) => {
-    const emailRegex = /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/;
-    return emailRegex.test(Email);
-  };
+  // (for after submit validation)
+  // function handleEmail(event) {
+  //   setEmail(event.target.value);
+  // }
+  // const isValidEmail = (Email) => {
+  //   const emailRegex = /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/;
+  //   return emailRegex.test(Email);
+  // };
 
   return (
     <>
@@ -53,7 +54,10 @@ function SubmitButton() {
         {/* radio buttons */}
         <RadioButtons error={OptionerrorMsg} option={handleOption} />
         {/* <Email Input /> */}
-        <EmailForm error={EmailerrorMsg} onChange={handleEmail} />
+        <EmailForm 
+        // (for after submit validation)
+        // error={EmailerrorMsg} onChange={handleEmail}
+         />
         {/* <Password Input /> */}
         <PasswordForm />
         {/* skills input */}
