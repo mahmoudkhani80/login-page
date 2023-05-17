@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-function TagsInput() {
+function TagsInput(props) {
   const [tags, setTags] = useState([]);
 
   function handleKeyDown(e) {
@@ -9,12 +9,14 @@ function TagsInput() {
     if (!value.trim()) return;
     setTags([...tags, value]);
     e.target.value = "";
+
   }
 
   function removeTag(index) {
+    
     setTags(tags.filter((el, i) => i !== index));
   }
-
+  console.log(tags);
   return (
     <div className="input-layout">
       <strong className="grey-text">Select Skills</strong>
@@ -23,6 +25,7 @@ function TagsInput() {
         type="text"
         className="border-for-inputs"
         placeholder="Enter your skills"
+        onChange={props.tagsInput}
       />
       <div className="tags-input-container">
         {tags.map((tag, index) => (
@@ -34,6 +37,7 @@ function TagsInput() {
           </div>
         ))}
       </div>
+      {props.error && <p className="error">{props.error}</p>}
     </div>
   );
 }

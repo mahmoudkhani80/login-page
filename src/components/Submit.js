@@ -7,8 +7,10 @@ import RadioButtons from "./RadioButtons";
 function SubmitButton() {
   const [option, setOption] = useState(null);
   const [OptionerrorMsg, setOptionErrorMsg] = useState("");
-  const [Email, setEmail] = useState("");
-  const [EmailerrorMsg, setEmailErrorMsg] = useState("");
+  const [tagsInput, setTagsInput] = useState("");
+  const [tagsInputerrorMsg, setTagsInputErrorMsg] = useState("");
+  // const [Email, setEmail] = useState("");
+  // const [EmailerrorMsg, setEmailErrorMsg] = useState("");
 
   function handleSubmit(event) {
     event.preventDefault();
@@ -22,6 +24,17 @@ function SubmitButton() {
       // console.log(option);
     }
     // end of radio buttons
+
+    // tags input
+    if (tagsInput.length === 0) {
+      setTagsInputErrorMsg("please enter tags.");
+    }
+    else{
+      setTagsInputErrorMsg("");
+    }
+
+
+
     // email (for after submit validation)
 
     // if (!isValidEmail(Email)) {
@@ -38,6 +51,9 @@ function SubmitButton() {
   // console.log(setEmailErrorMsg);
   function handleOption(option) {
     setOption(option);
+  }
+  function handleTagsIput(tagsInput) {
+    setTagsInput(tagsInput);
   }
   // (for after submit validation)
   // function handleEmail(event) {
@@ -61,7 +77,7 @@ function SubmitButton() {
         {/* <Password Input /> */}
         <PasswordForm />
         {/* skills input */}
-        <TagsInput />
+        <TagsInput error={tagsInputerrorMsg} tagsInput={handleTagsIput}/>
       </form>
       <div>
         <button
